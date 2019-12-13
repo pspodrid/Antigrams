@@ -10,7 +10,7 @@ class Anagram
   # end
 
   def anagrams
-    if (@input1.chars.sort == @input2.chars.sort)
+    if (@input1.upcase.chars.sort == @input2.upcase.chars.sort)
       return "these words are anagrams"
     end
   end
