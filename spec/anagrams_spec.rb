@@ -12,7 +12,11 @@ describe('Anagram#anagrams') do
     expect(anagram.anagrams()).to(eq("these words are anagrams"))
   end
   it("should return these words are anagrams if true") do
+    anagram = Anagram.new("hey", "hry")
+    expect(anagram.anagrams()).to(eq("one of these is not a word"))
+  end
+  it("should return these words are anagrams if true") do
     anagram = Anagram.new("hey", "hey")
-    expect(anagram.word_checker()).to(eq("one of these is not a word"))
+    expect(anagram.anagrams()).to(eq("these are antigrams"))
   end
 end
