@@ -17,7 +17,7 @@ describe('Anagram#anagrams') do
   end
   it("should return these words are anagrams if true") do
     anagram = Anagram.new("hey", "bat")
-    expect(anagram.anagrams()).to(eq("these are antigrams"))
+    expect(anagram.anagrams()).to(eq("these words are antigrams"))
   end
   it("should return these words are anagrams even if there are spaces and characters") do
     anagram = Anagram.new("rac,e car", "racecar")
