@@ -9,9 +9,10 @@ class Anagram
       return "one of these is not a word"
     elsif (@input1.upcase.chars.sort == @input2.upcase.chars.sort)
       return "these words are anagrams"
-    elsif !(@input1.upcase.chars.include?(@input2.upcase.chars.each))
+    elsif (@input1.downcase.gsub(/[^0-9a-z]/i, '').chars() == @input2.downcase.gsub(/[^0-9a-z]/i, '').chars)
+      return "these words are anagrams"
+    else !(@input1.upcase.chars.include?(@input2.upcase.chars.each))
       return "these words are antigrams"
-    elsif ()
     end
   end
 end

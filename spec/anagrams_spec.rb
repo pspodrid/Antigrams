@@ -20,7 +20,7 @@ describe('Anagram#anagrams') do
     expect(anagram.anagrams()).to(eq("these words are antigrams"))
   end
   it("should return these words are anagrams even if there are spaces and characters") do
-    anagram = Anagram.new("rac,e car", "racecar")
+    anagram = Anagram.new("rac?e ca  r", "ra!cec#ar")
     expect(anagram.anagrams()).to(eq("these words are anagrams"))
   end
 end
