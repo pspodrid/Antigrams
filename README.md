@@ -13,7 +13,28 @@ _A user has the ability to input any two words and get back a few responses. If 
 * _clone this repo_
 * _cd to repo and bundle install in the terminal_
 
-## Known Bugs
+## Specs
+
+_Tests to see if user inputs are words_
+_Input: "fwqr", "plhb"
+_Output: "These are not words"
+
+_Tests to make sure to account for capitalization
+_Input: "a", "A"
+_Output: "These words are anagrams"
+
+_Tests to see if user inputs are anagrams_
+_Input: "hey", "eyh"
+_Output: "These words are anagrams"
+
+_Tests to see if user inputs are _antigrams if they share no similar letter_
+_Input: "Bat, "hye"
+_Output: "These words are antigrams"
+
+_Tests to make sure to account for special characters_
+_Input: "$h,e#y", "hey"
+_Output: "These words are anagrams"
+
 
 ## Technologies Used
 
